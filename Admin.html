@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Car Details</title>
+</head>
+<body>
+<h2>Add Car Details</h2>
+<form action="/submit_car_details" method="post">
+  <label for="car_name">Car Name:</label><br>
+  <input type="text" id="car_name" name="car_name"><br>
+  
+  <label for="description">Description:</label><br>
+  <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+  
+  <label for="year">Year Model:</label><br>
+  <input type="number" id="year" name="year" min="2000" max="2024"><br>
+  
+  <label for="price">Price:</label><br>
+  <input type="number" id="price" name="price" min="0" step="any"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
 
