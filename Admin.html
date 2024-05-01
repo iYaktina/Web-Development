@@ -89,7 +89,7 @@
                 "Range Rover": ["Range Rover Evoque", "Range Rover Velar", "Range Rover Defender", "Range Rover SV"]
             };
             var modelSelect = document.getElementById('car_model');
-            modelSelect.options.length = 0; // Clear existing options first
+            modelSelect.options.length = 0; 
             modelSelect.options.add(new Option("Select Car Model", ""));
             if (models[brand]) {
                 models[brand].forEach(function(model) {
@@ -100,8 +100,8 @@
 
         function removeCurrentSelection(selectElementId) {
             var select = document.getElementById(selectElementId);
-            if (select.selectedIndex > 0) { // Ensure that the "Select Car Brand/Model" placeholder is not selected
-                select.selectedIndex = 0; // Set the selection back to the placeholder option
+            if (select.selectedIndex > 0) { 
+                select.selectedIndex = 0;
             }
         }
 
@@ -136,7 +136,7 @@
         <label for="car_model">Car Model:</label>
         <select id="car_model" name="car_model">
             <option value="">Select Car Model</option>
-            <!-- Models will be dynamically filled based on the selected brand -->
+
         </select>
         <button type="button" onclick="removeCurrentSelection('car_model')">Remove Selected Model</button><br><br>
 
