@@ -108,3 +108,72 @@
     </form>
 </body>
 </html>
+
+        <h1>PRODUCT EDITOR</h1>
+        <form action="/submit_product_change" method="POST">
+
+            <label for="car brand">Car Brand:</label>
+            <select id="car brand" name="car brand">
+                <option value="">Select Car Brand</option>
+                <option value="BMW">BMW</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Range Rover">Range Rover</option>
+                <option value="McLaren">McLaren</option>
+            </select><br><br>
+
+            <label for="car model">Car Model:</label>
+            <select id="car model" name="car model">
+                <option value="">Select Car Model</option>
+
+                <option value="Porsche 928">Porsche 928</option>
+                <option value="Porsche 911 GT3 RS">Porsche 911 GT3 RS</option>
+                <option value="Porsche Cayenne">Porsche Cayenne</option>
+                <option value="Porsche Boxter 718">Porsche Boxter 718</option>
+
+                <option value="BMW M5 CS">BMW M5 CS</option>
+                <option value="BMW M3 CS">BMW M3 CS</option>
+                <option value="BMW X6">BMW X6</option>
+                <option value="BMW XM">BMW XM</option>
+
+
+                <option value="Marcedes S-Class">Marcedes S-Class</option>
+                <option value="Marcedes G-Class">Marcedes G-Class</option>
+                <option value="Marcedes AMG GT">Marcedes AMG GT</option>
+                <option value="Marcedes GLS">Marcedes GLS</option>
+            
+
+
+                <option value="RangeRover Evoke ">RnageRover Evoke</option>
+                <option value="RangeRover Velar">RangeRover Velar</option>
+                <option value="RangeRover Defender">RangeRover Defender</option>
+                <option value="RangeRover SV">RangeRover SV</option>
+
+               
+            </select><br><br>
+
+
+            <label for="manufactur_year">Manufactur Year:</label>
+            <input type="text" id="manufactur_year" name="manufactur_year"><br><br>
+          
+            <label for="car_discription">Discription:</label>
+            <textarea id="car_discription" name=" car_discription" rows="4" cols="50"></textarea><br><br>
+
+            <label for="carPrice">Car Price:</label><br>
+        <input type="number" id="CarPrice" name="CarPrice"><br><br>
+
+
+        <label for="Carimages">Product Images:</label><br>
+        <input type="file" id="Carimages" name="Carimages" multiple accept="image/*"><br><br>
+        
+        <label for="Carvideos">Product Videos:</label><br>
+        <input type="file" id="CarVideos" name="Carvideos" multiple accept="video/*"><br><br>
+        
+        
+        <button type="button" onclick="submitChanges()">Submit Changes</button>
+
+
+
+        </form>   
+     
+</html>
