@@ -50,6 +50,127 @@
 
 
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Purchase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css"> 
+  
+  
+</head>
+<body>
+    <div class="container">
+        <h2>Buy Car in Installments</h2>
+        <form id="carForm" action="process_purchase.php" method="post">
+            <label for="carModel">Car Model:</label>
+            <select id="carModel" name="carModel" required>
+              <optgroup label="Porsche">
+                  <option value="porsche-928">Porsche 928</option>
+                  <option value="porsche-911-gt3-rs">Porsche 911 GT3 RS</option>
+                  <option value="porsche-cayenne-gts">Porsche Cayenne GTS</option>
+                  <option value="porsche-boxster-718">Porsche Boxster 718</option>
+              </optgroup>
+              <optgroup label="BMW">
+                  <option value="bmw-m5-cs">BMW M5 CS</option>
+                  <option value="bmw-m3-cs">BMW M3 CS</option>
+                  <option value="bmw-x6">BMW X6</option>
+                  <option value="bmw-xm">BMW XM</option>
+              </optgroup>
+              <optgroup label="Mercedes">
+                  <option value="mercedes-s-class">Mercedes S-Class</option>
+                  <option value="mercedes-g-class">Mercedes G Class</option>
+                  <option value="mercedes-amg-gt">Mercedes AMG GT</option>
+                  <option value="mercedes-gls">Mercedes GLS</option>
+              </optgroup>
+              <optgroup label="Range Rover">
+                  <option value="range-rover-evoque">Range Rover Evoque</option>
+                  <option value="range-rover-velar">Range Rover Velar</option>
+                  <option value="range-rover-defender">Range Rover Defender</option>
+                  <option value="range-rover-sv">Range Rover SV</option>
+              </optgroup>
+          </select>
+          
+            <label for="paymentPlan">Payment Plan:</label>
+            <select id="paymentPlan" name="paymentPlan" required>
+                <option value="6">6 months</option>
+                <option value="12">1 year</option>
+            </select>
+            <label for="carPrice">Car Price:</label>
+            <input type="text" id="carPrice" name="carPrice" placeholder="Enter car price" required>
+            <div class="input-icon">
+                <label for="cardNumber">Credit Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your credit card number" required maxlength="16">
+                <i class="fas fa-credit-card"></i>
+            </div>
+            <div class="input-icon">
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YYYY" required maxlength="7">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="input-icon">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required maxlength="3">
+                <i class="fas fa-lock"></i>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+        // Function to calculate the total payment based on the car price and payment plan
+        function calculatePayment() {
+            const carPrice = parseFloat(document.getElementById("carPrice").value);
+            const paymentPlan = parseInt(document.getElementById("paymentPlan").value);
+            const monthlyPayment = carPrice / paymentPlan;
+            const totalPayment = carPrice + (carPrice * 0.1); // Adding 10% interest for installment
+
+          
+            let resultHtml = `Total payment: $${totalPayment.toFixed(2)} (${paymentPlan} months at $${monthlyPayment.toFixed(2)} per month)`;
+            resultHtml += `<br>Monthly Payment Breakdown:<ul>`;
+            for (let i = 1; i <= paymentPlan; i++) {
+                resultHtml += `<li>Month ${i}: $${(monthlyPayment * i).toFixed(2)}</li>`;
+            }
+            resultHtml += `</ul>`;
+            document.getElementById("result").innerHTML = resultHtml;
+        }
+
+        document.getElementById("carForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            
+            const cardNumber = document.getElementById("cardNumber").value;
+            const expirationDate = document.getElementById("expirationDate").value;
+            const cvv = document.getElementById("cvv").value;
+
+            if (cardNumber.length !== 16) {
+                alert("Please enter a valid 16-digit credit card number.");
+                return;
+            }
+
+            if (!expirationDate.match(/^\d{2}\/\d{4}$/)) {
+                alert("Please enter a valid expiration date in the format MM/YYYY.");
+                return;
+            }
+
+            if (cvv.length !== 3) {
+                alert("Please enter a valid 3-digit CVV.");
+                return;
+            }
+
+            calculatePayment(); 
+        });
+    </script>
+</body>
+</html>
+
+
+
 </body>
 </html>
 
