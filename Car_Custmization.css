@@ -1,0 +1,39 @@
+body {
+    
+    background-image: url('file:///C:/Users/Youssef%20Faisel/OneDrive/Desktop/a-machine-tool-and-other-machines-sitting-on-a-black-background-free-photo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    color: white;
+   
+}
+option {
+    color: black; 
+    background-color: white; 
+  }
+button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: darkgreen;
+    font-size: 18px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; 
+    color: white; 
+  }
+  
+    
+h2 {
+    font-weight: bold;
+    border-color: black;
+    border-style: bold;
+    
+}
