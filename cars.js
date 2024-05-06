@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginButton = document.querySelector(".Login");
     const signupButton = document.querySelector(".Signup");
     signupForm.style.display = "none";
-    loginButton.addEventListener("click", function() {
-        
+    loginButton.addEventListener("click", function() {        
         loginForm.style.display = "block";
         signupForm.style.display = "none";
     });
@@ -14,6 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
         loginForm.style.display = "none";
     });
 });
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var loginEmail = document.getElementById("loginEmail").value;
+  var loginPassword = document.getElementById("loginPassword").value;
+  var loginError = document.getElementById("loginError");
+
+  if (loginEmail === "haniamaher@gmail.com" && loginPassword === "123") {
+      alert("Login successful. Loading form...");
+      window.location.href = 'admin.html';
+  } else {
+      loginError.style.display = 'block'; 
+      window.location.href = 'index.html'
+  }
+});
+
+
+
 
 
 
