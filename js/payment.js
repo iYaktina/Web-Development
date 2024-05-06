@@ -33,8 +33,8 @@ $(document).ready(function() {
         // Validate expiry date (MM/YY)
         var expiryDate = $('.expiry_date').val().trim();
         var today = new Date();
-        var currentMonth = today.getMonth() + 1; // January is 0, so add 1
-        var currentYear = today.getFullYear() % 100; // Get last two digits of the year
+        var currentMonth = today.getMonth() + 1; 
+        var currentYear = today.getFullYear() % 100; 
 
         var expiryMonth = parseInt(expiryDate.split('/')[0]);
         var expiryYear = parseInt(expiryDate.split('/')[1]);
@@ -52,8 +52,6 @@ $(document).ready(function() {
             return;
         }
 
-        // Proceed with payment processing if all validations pass
         alert('Payment successful!');
-        // Additional logic to submit payment data or redirect to another page
     });
 });
