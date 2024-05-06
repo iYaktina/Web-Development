@@ -104,18 +104,6 @@ line-height: 85px;
     font-family: 'Baloo Bhaijaan',cursive;
     font-size: 58px;
 }
-@media screen and (max-width:420px){
-    .card_grp{
-        flex-direction: column;
-    }
-    .card_item{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .btn{
-        margin-bottom: 20px;
-    }
-}
 
 
 
