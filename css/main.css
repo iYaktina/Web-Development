@@ -231,7 +231,9 @@ background: linear-gradient(var(--primary),transparent);
 z-index: 100;
 }
 
-/*el videohat ely htb2a 3la el back ground */
+/*el videohat ely htb2a 3la el back ground 
+janah's
+*/
 .banner .bg-video{
 display: none;
 position: absolute;
@@ -243,7 +245,8 @@ height: 100%;
 object-fit: cover;
 object-position: center;
 }
-/*hena lma tkoon active hn3rdha 34an normally m4 m3rooda 34an fe kza video */
+/*hena lma tkoon active hn3rdha 34an normally m4 m3rooda 34an fe kza video 
+janah's */
 .banner .bg-video.active{
     display: block;
 }
@@ -266,7 +269,8 @@ object-position: center;
     line-height: 0.8em;
     letter-spacing: 5px;
 }
-/*EL model bta3 el 3rbya ely byb2a mktoob */
+/*EL model bta3 el 3rbya ely byb2a mktoob 
+janah's */
 .banner .content .model{
 font-size: 4em;
 text-transform: uppercase;
@@ -274,12 +278,14 @@ color:var(--primary);
 display: none;
     
 }
-/* 34an a3mlo show  */
+/* 34an a3mlo show janah's 
+*/
 .banner .content .model.active{
 display: block;
 }
 
-/* hena el paragraph ely hnktb feeh description 3n el 3rbya */
+/* hena el paragraph ely hnktb feeh description 3n el 3rbya  janah's
+*/
 .banner .content p{
 color:#ffffff;
 font-size: 200;
@@ -317,7 +323,9 @@ transition: 0.5s;
     box-shadow: inset 0 0 50px rgba(0,194,222,0.5);
 }
 
-/* el video show casing wel 3d modeling  */
+/* el video show casing wel 3d modeling 
+janah's
+*/
 .banner .screen{
     position: absolute;
     right: 10%;
@@ -329,7 +337,9 @@ transition: 0.5s;
     z-index: 100;
 }
 
-/* 34an yb2a animated w ylef 7wleen nfso  */
+/* 34an yb2a animated w ylef 7wleen nfso  
+janah's
+*/
 @keyframes animate{
 0%{
     transform: rotateX(-35deg) rotateY(0deg);
@@ -341,7 +351,9 @@ transition: 0.5s;
 }
 
 /* box el videos ely t7t 3la el yemen */
-/*de ely 3mlna 3leeha en el style yb2a 3d w kda */
+/*de ely 3mlna 3leeha en el style yb2a 3d w kda 
+janah's
+*/
 .screen div{
 position: absolute;
 top:0  ;
@@ -350,7 +362,8 @@ width: 100%;
 height: 100%;
 transform-style: preserve-3d;
 }
-/* hena 3mlna en el design yb2a squared 7wleen nfso 3n tree2 variable el i  */
+/* hena 3mlna en el design yb2a squared 7wleen nfso 3n tree2 variable el i  janah's
+*/
 .screen div span{
 position: absolute;
 top: 0;
@@ -362,7 +375,8 @@ background: linear-gradient(transparent,var(--primary));
 transform: rotateY(calc(90deg*var(--i))) translateZ(150px);
 } 
 
-/* el shadow ely t7t el box ely feeh el videos  */
+/* el shadow ely t7t el box ely feeh el videos janah's
+*/
 .shadow{
     position: absolute;
     content: '';
@@ -379,7 +393,9 @@ transform: rotateY(calc(90deg*var(--i))) translateZ(150px);
     ,rgba(0,194,222,1.0);
 }
 
-/* en el video yb2a fit 3la el square  */
+/* en el video yb2a fit 3la el square 
+janah's
+*/
 .screen div span video{
     position: absolute;
     bottom: 0;
