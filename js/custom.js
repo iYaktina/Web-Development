@@ -96,7 +96,7 @@ function displayCarDetails(carName,currentYear) {
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Mercedes-Benz G-Class, sometimes called G-Wagen (short for Geländewagen, 'terrain vehicle'), is a mid-size four-wheel drive luxury SUV manufactured by Magna Steyr (formerly Steyr-Daimler-Puch) in Austria and sold by Mercedes-Benz.";
             break;
-        case 'MERCEDES AMG GT':
+        case 'MERCEDES AMG-GT':
             carNameElement.textContent = carName;
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Mercedes-AMG GT is a high-performance grand tourer manufactured by Mercedes-AMG, the performance arm of Mercedes-Benz.";
@@ -106,17 +106,17 @@ function displayCarDetails(carName,currentYear) {
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Mercedes-Benz GLS-Class, formerly Mercedes-Benz GL-Class, is a full-size luxury SUV produced by Mercedes-Benz since 2006.";
             break;
-        case 'RANGE ROVER Evoque':
+        case 'RANGE ROVER EVOQUE':
             carNameElement.textContent = carName;
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Range Rover Evoque is a subcompact luxury crossover SUV produced by the British manufacturer Land Rover, a subsidiary of Tata Motors.";
             break;
-        case 'RANGE ROVER Velar':
+        case 'RANGE ROVER VELAR':
             carNameElement.textContent = carName;
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Range Rover Velar is a mid-size luxury crossover SUV produced by British automotive company Jaguar Land Rover under their Land Rover marque.";
             break;
-        case 'RANGE ROVER Defender':
+        case 'RANGE ROVER DEFENDER':
             carNameElement.textContent = carName;
             carPriceElement.textContent = calculatePrice(carName, currentYear);
             carDescriptionElement.textContent = "The Land Rover Defender is a four-wheel drive off-road utility vehicle from British automaker Land Rover.";
@@ -173,7 +173,7 @@ function calculatePrice(carName, currentYear) {
         'BMW XM': 185995,
         'MERCEDES S-CLASS': 117700,
         'MERCEDES G-CLASS': 143000,
-        'MERCEDES AMG GT': 177050,
+        'MERCEDES AMG-GT': 177050,
         'MERCEDES GLS': 87000,
         'RANGE ROVER EVOQUE': 49900,
         'RANGE ROVER VELAR': 61500,
