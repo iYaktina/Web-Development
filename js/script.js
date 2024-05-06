@@ -80,7 +80,7 @@ function viewdetails() {
     }
 }
 
-
+/* Youssef hena ana 3mlt en lma adoos 3la customization page yb3t el image wel car name lel customization page 3n tree2 el url w 3mlt encode 34an yb2a secured w kda   */
 function openCustomizationPage() {
     const activeModel = document.querySelector('.model.active');
     if (activeModel) {
@@ -98,8 +98,8 @@ function openCustomizationPage() {
                                '&image=' + encodedCarImage ;
 
         // Open pop-up window with customization page
-        var popupWidth = 800; // Adjust width as needed
-        var popupHeight = 600; // Adjust height as needed
+        var popupWidth = 800; 
+        var popupHeight = 600; 
         var left = (window.innerWidth - popupWidth) / 2;
         var top = (window.innerHeight - popupHeight) / 2;
         var popupWindow = window.open(customizationURL, 'Customization', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
