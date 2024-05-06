@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- 7tet da 34an n2dr n3ml el gallery showcase ely t7t  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- 7tet da 34an n2dr n3ml el icons w kda -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Wheels and Deals | Sport Cars Website </title>
+    </head>
+        <body>
+       <!--Header-->
+       <header>
+        <span class="year">2010-2024</span>
+        <a href="index.html" class="logo"><img src="./images/logo.jpg" alt="logo"></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+       </header>
+       <div class="banner">
+        <ul class="nav" onclick="toggleMenu();">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+    </ul>
+    <div class="bg-video-list">
+        <video class ="bg-video Porsche-1 active" src="./assests/Porsche/porshe 928.mp4"
+        autoplay
+        loop
+        muted></video>
+
+        <video class ="bg-video Porsche-2" src="./assests/Porsche/911-3.mp4"
+        autoplay
+        loop
+        muted></video>
+
+        <video class ="bg-video Porsche-3" src="./assests/Porsche/cayeneegts.mp4"
+        autoplay
+        loop
+        muted></video>
+
+        <video class ="bg-video Porsche-4" src="./assests/Porsche/boxster.mp4"
+        autoplay
+        loop
+        muted></video>
+
+    
+    </div>
+    <div class="content">
+        <h1>Porsche</h1>
+        <h3 class="model Porsche-1 active" data-image="./images/porsche-2.jpg" data-video="./assets/Porsche/porsche_928.mp4">Porsche 928</h3>
+        <h3 class="model Porsche-2"  data-image="./images/porsche-3.jpg" data-video="./assets/Porsche/911_3.mp4">Porsche 911 GT3 RS</h3>
+        <h3 class="model Porsche-3"  data-image="./images/porsche-1.jpg" data-video="./assets/Porsche/cayenne_gts.mp4">Porsche Cayenne GTS</h3>
+        <h3 class="model Porsche-4"  data-image="./images/porsche-4.jpg" data-video="./assets/Porsche/boxster.mp4">Porsche Boxster 718</h3>
+        <p></p>
+        <a href="#" onclick="openCustomizationPage()">View More Details</a>
+    </div>
+
+    <a href="#" class="pause active" onclick="pauseVideo()">
+        <i class="bi bi-pause-circle"></i>
+    </a>
+<a href="#" class="play" onclick="playVideo()">
+    <i class="bi bi-play-circle"></i>
+</a>
+    <div class="screen">
+        <div class="shadow"></div>
+            <div>
+                <span style="--i: 0">  <video class="trailer Porsche-1 screen-video active" 
+                    src="./assests/Porsche/porshe 928.mp4"autoplay loop muted></video> 
+                    <video class="trailer Porsche-2 screen-video" 
+                    src="./assests/Porsche/991-2.mp4"autoplay loop muted></video>
+                    <video class="trailer Porsche-3 screen-video" 
+                    src="./assests/Porsche/cayeneegts.mp4"autoplay loop muted></video>
+                    <video class="trailer Porsche-4 screen-video" 
+                    src="./assests/Porsche/boxster.mp4"autoplay loop muted></video>  
+            
+                            
+                        
+                          </span>
+                <span style="--i: 1">   <video class="screen-video" src="./assests/Porsche/911-1.mp4" autoplay loop muted> 
+                   </video>       </span>
+                <span style="--i: 2">   <video class="screen-video" src="./assests/Porsche/911-3.mp4"autoplay loop muted> </video>       </span>
+                <span style="--i: 3">   <video class="screen-video" src="./assests/Porsche/911-4.mp4"autoplay loop muted> </video>       </span>
+                
+      
+            </div>
+         </div>
+         <div class="gallery">
+            <div class="carousel">
+                <a class="carousel-item" href="#" onclick="changeVideo('Porsche-1');">
+                    <img src="./images/porsche-2.jpg" alt="" class="">
+                    <h4 style="color: #686A6C">Porsche 928 </h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('Porsche-2');">
+                    <img src="./images/porsche-3.jpg" alt="" class="">
+                    <h4 style="color:#686A6C" >Porsche 911 GT3 RS</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('Porsche-3');">
+                    <img src="./images/porsche-1.jpg" alt="" class="">
+                    <h4 style="color:white">Porsche Cayenne GTS</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('Porsche-4');">
+                    <img src="./images/porsche-4.jpg" alt="" class="">
+                    <h4  style="color:#0096D6" >Porsche Boxster 718 </h4>
+                </a>
+              </div>
+         </div>
+       </div>
+       <ul class="sci">
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+       </ul>
+       <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript">
+             $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+        </script>
+         <script src="./js/script.js"></script>
+        </body>
+</html>
