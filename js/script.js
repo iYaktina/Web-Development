@@ -114,4 +114,3 @@ function openCustomizationPage() {
              $(document).ready(function(){
     $('.carousel').carousel();
   });
-
